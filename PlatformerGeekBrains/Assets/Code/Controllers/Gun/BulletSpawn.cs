@@ -35,11 +35,6 @@ namespace Platformer
                 _time = _constance.TimeSpawnBullet;
                 Spawn();
             }    
-
-            foreach(var bullet in _bullets)
-            {
-                bullet.Update();
-            }
         }
 
         private void CreateArray(GameObject prefabBullet)

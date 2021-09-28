@@ -6,7 +6,8 @@ namespace Platformer
     {
         #region Player
 
-        public readonly float PlayerSpeed = 0.1f;
+        public readonly float PlayerSpeed = 7f;
+        public readonly float PlayerJumpSpeed = 20f;
 
         #endregion
 
@@ -14,14 +15,6 @@ namespace Platformer
 
         public readonly string HORIZONTAL = "Horizontal";
         public readonly string JUMP = "Jump";
-
-        #endregion
-
-        #region Jump
-
-        public readonly float GroundLevel = 0.5f;
-        public readonly float StartJumpSpeed =.7f;
-        public readonly float G = -13f;
 
         #endregion
 

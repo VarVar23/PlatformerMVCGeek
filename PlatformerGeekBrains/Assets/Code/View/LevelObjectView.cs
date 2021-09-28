@@ -6,13 +6,15 @@ namespace Platformer
     {
         public Transform TransformView;
         public SpriteRenderer SpriteRendererView;
-        public BoxCollider2D BoxColliderView;
+        public Collider2D ColliderView;
         public Rigidbody2D Rigidbody2DView;
 
-        void Start()
+        void Awake()
         {
             TransformView = GetComponent<Transform>();
             SpriteRendererView = GetComponent<SpriteRenderer>();
+            ColliderView = GetComponent<Collider2D>();
+            Rigidbody2DView = GetComponent<Rigidbody2D>();
         }
     }
 }
